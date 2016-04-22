@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring-2.10.1.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	
+	<camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
+		<package>com.wwctrials.answrs.camel.routes</package>
+
+		<!-- Default JMX connector url: "service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi/camel" -->
+		<jmxAgent id="agent" createConnector="true" registryPort="1099" />
+
+		<!-- include route from MYEDC -->
+		<routeContextRef ref="input.MY_EDC" />
+
+		<!-- include route to ANSWRS -->
+		<!--<routeContextRef ref="input.ANSWRS" />-->
+
+		<!-- include route from IMPORTDATA -->
+		<!-- <routeContextRef ref="input.IMPORTDATA"/> -->
+
+		<!-- include route from NODES -->
+		<!-- <routeContextRef ref="input.NODES"/> -->
+
+        <!--This route enetentds the routing engine to push data in eCOS -->
+        <route>
+            <from uri="file:datafiles?maxMessagesPerPoll=1&amp;include=.*.xml&amp;delay={{environment.uploadpolltime}}"/>
+            <log message="INCOMING FILE:\n ${body}" />
+            <to uri="bean:myEdcDataImportBean?method=upload" />
+        </route>
+        
+		<!-- add a timer to call MyEdcDataImportBean.onHourly() -->
+<!--		<route> 
+			<from
+			uri="timer://hourly?fixedRate=true&amp;period=1h"/> 
+			<to uri="bean:myEdcDataImportBean?method=onHourly" /> 
+		</route> -->
+	 
+		<!-- add a timer to call MyEdcDataImportBean.onDaily() -->
+		<route> 
+			<from uri="timer://daily?fixedRate=true&amp;period=24h&amp;delay=24h" /> 
+			<to uri="bean:myEdcDataImportBean?method=onDaily" /> 
+		</route> 
+	
+
+	</camelContext>
+
+	<bean id="bridgePropertyPlaceholder"
+		class="org.apache.camel.spring.spi.BridgePropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:environment.properties" />
+	</bean>
+	
+	<bean id="taxiBean" class="com.wwctrials.answrs.camel.TaxiBean"/>
+
+	<!-- enable Spring @Component scan -->
+	<context:component-scan base-package="com.wwctrials.answrs.camel" />
+
+	<bean id="myEdcDataImportBean" class="com.wwctrials.answrs.camel.MyEdcDataImportBean" />
+	<bean class="com.wwctrials.answrs.camel.MyEdcDataImportBeanTrigger">
+		<constructor-arg ref="myEdcDataImportBean" />
+	</bean>
+	<bean id="utf8FilterBean" class="com.wwctrials.answrs.camel.Utf8FilterBean" />
+
+	<!-- lets configure the default ActiveMQ broker URL -->
+	<bean id="jms" class="org.apache.camel.component.jms.JmsComponent">
+		<property name="connectionFactory">
+			<bean class="org.apache.activemq.ActiveMQConnectionFactory">
+				<property name="brokerURL"
+					value="vm://localhost?broker.persistent=false&amp;broker.useJmx=false" />
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- Use this connection for consumers as they are potentially long running and need single connection -->
+	<bean id="activemqc"
+	class="org.apache.activemq.camel.component.ActiveMQComponent">
+		<property name="connectionFactory">
+			<bean
+			class="org.apache.activemq.ActiveMQConnectionFactory">
+				<property name="brokerURL" value="tcp://localhost:${environment.activemq.port}?jms.prefetchPolicy.all=1" />
+				<property name="userName" value="system" />
+				<property name="password"
+				value="ENC(mYRkg+4Q4hua1kvpCCI2hg==)" />
+			</bean>
+		</property>	
+	</bean>
+	
+
+	<!-- configure the camel activemq component to use the current broker -->
+	<bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
+		<property name="connectionFactory">
+			<bean class="org.apache.activemq.ActiveMQConnectionFactory">
+				<property name="brokerURL"
+					value="tcp://localhost:${environment.activemq.port}" />
+				<property name="userName" value="system" />
+				<property name="password" value="ENC(mYRkg+4Q4hua1kvpCCI2hg==)" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="jmsConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL"
+                  value="tcp://localhost:${environment.activemq.port}?jms.prefetchPolicy.all=1" />
+        <property name="userName" value="system" />
+        <property name="password" value="ENC(mYRkg+4Q4hua1kvpCCI2hg==)" />
+    </bean>
+    
+    <bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory"
+                init-method="start" destroy-method="stop">
+                <property name="maxConnections" value="8" />
+                <property name="connectionFactory" ref="jmsConnectionFactory" />
+    </bean>
+    
+    <bean id="jmsConfig" class="org.apache.camel.component.jms.JmsConfiguration">
+                <property name="connectionFactory" ref="pooledConnectionFactory" />
+                <property name="transacted" value="false"/>
+    </bean>
+	
+	<!-- Use this connection for producers as they can be pooled and re-used for efficiency -->
+    <bean id="activemqp" class="org.apache.activemq.camel.component.ActiveMQComponent">
+            <property name="configuration" ref="jmsConfig" />
+    </bean>
+
+	<!-- Creating mina endpoints is a bit complex so we reuse MinaComponnet 
+		as a factory bean to create our endpoint, this is the easiest to do -->
+	<bean id="mina" class="org.apache.camel.component.mina.MinaComponent">
+		<!-- we must provide a camel context so we refer to it by its id -->
+		<constructor-arg index="0" ref="camel" />
+	</bean>
+
+	<!-- Used to send static file to IMPORT DATA -->
+	<!-- <bean class="com.wwctrials.answrs.camel.SendFileRecordsToQueueBean"/> 
+		<bean class="com.wwctrials.answrs.camel.DistributeRecordsBean"/> -->
+
+	<bean id="messageCountAggregationStrategy" class="com.wwctrials.answrs.eip.MessageCountAggregationStrategy"/>	
+
+	<bean id="answrsXmlFormSplitter"
+		class="com.wwctrials.answrs.eip.AnswrsXmlFormSplitter"/>
+		
+	<bean id="jaxbMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">	
+		<property name="classesToBeBound">
+			<list>
+				<value>com.wwctrials.jaxb.answrs.ObjectFactory</value>
+				<value>com.wwctrials.jaxb.config.ObjectFactory</value>
+			</list>
+		</property>
+		<property name="marshallerProperties">
+			<map>
+				<entry>
+					<key>
+						<util:constant static-field="javax.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT" />
+					</key>
+					<value type="java.lang.Boolean">true</value>
+				</entry>
+			</map>					
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/CSP/!svn/ver/12170/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel
+END
+MyEdcDataImportBeanTrigger.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/MyEdcDataImportBeanTrigger.java
+END
+Utf8FilterBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/Utf8FilterBean.java
+END
+DistributeRecordsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/DistributeRecordsBean.java
+END
+MyEdcPreProcessorHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/MyEdcPreProcessorHelper.java
+END
+MyEdcDataImportBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/CSP/!svn/ver/12170/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/MyEdcDataImportBean.java
+END
+MyEdcUploadBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/MyEdcUploadBean.java
+END

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified"
+>
+    <!-- the root ANSWRS element -->
+    <xs:element name="answrs">
+
+        <xs:complexType>
+
+            <xs:sequence>
+
+                <!-- datasource information -->
+                <xs:element name="datasource" minOccurs="1" maxOccurs="1">
+
+                    <xs:complexType>
+
+                        <xs:sequence>
+						
+                            <!-- the time the message was send -->
+                            <xs:element name="incoming-timestamp" minOccurs="1" maxOccurs="1" type="xs:dateTime" />
+
+                            <!-- the time the ANSWRS schema was generated -->
+                            <xs:element name="processed-timestamp" minOccurs="1" maxOccurs="1" type="xs:dateTime" />
+
+                            <!-- the senders IP address -->
+                            <xs:element name="remote-addr" minOccurs="1" maxOccurs="1" type="xs:string" />
+
+                            <!-- the target database schema -->
+                            <xs:element name="target-schema" minOccurs="1" maxOccurs="1" type="xs:string" />
+
+                            <!-- the xml schema version to validate against -->
+                            <xs:element name="schema-version" minOccurs="0" maxOccurs="1" type="xs:string" />
+
+                        </xs:sequence>
+
+                    </xs:complexType>
+
+                </xs:element>
+
+                <!-- an unbounded list of countries -->
+                <xs:element name="country" minOccurs="1" maxOccurs="unbounded">
+
+                    <xs:complexType>
+
+                        <xs:sequence>
+
+                            <!-- the country ISO-3166 code -->
+                            <xs:element name="iso" minOccurs="1" maxOccurs="1">
+
+                                <xs:simpleType>
+
+                                    <!-- an extension of the string type -->
+                                    <xs:restriction base="xs:string">
+
+                                        <!-- allow 2 or 3 character ISO codes -->
+                                        <xs:pattern value="[A-Z]{2,3}" />
+
+                                    </xs:restriction>
+
+                                </xs:simpleType>
+
+                            </xs:element>
+
+                            <!-- an unbounded list of parent domain items -->
+                            <xs:element name="parent" minOccurs="1" maxOccurs="unbounded">
+
+                                <xs:complexType>
+
+                                    <xs:sequence>
+
+                                        <!-- the site identifier -->
+                                        <xs:element name="id" minOccurs="1" maxOccurs="1" type="xs:string" />
+
+                                        <!-- the domain for this childDb-->
+                                        <xs:element name="domain" minOccurs="1" maxOccurs="1" type="xs:string" />
+
+                                        <!-- an optional parent domain data -->
+                                        <xs:element name="parentDb" type="parentDb" minOccurs="0" maxOccurs="1" />
+
+                                        <!-- an optional, unbounded list of sub domain data -->
+                                        <xs:element name="childDb" type="childDb" minOccurs="0" maxOccurs="unbounded" />
+
+                                    </xs:sequence>
+
+                                </xs:complexType>
+
+                            </xs:element>
+
+                        </xs:sequence>
+						
+                    </xs:complexType>
+										
+                </xs:element>
+				
+            </xs:sequence>
+			
+        </xs:complexType>
+		
+    </xs:element>
+	
+	
+    <!-- create a type for the parent domain -->
+    <xs:complexType name="parentDb">
+	
+        <xs:sequence>
+		
+	    <!-- an unbounded list of form elements -->
+            <xs:element name="form" minOccurs="0" maxOccurs="unbounded">
+			
+                <xs:complexType>
+				
+                    <xs:sequence>
+					
+			<!-- the form identifier -->
+                        <xs:element name="id" minOccurs="1" maxOccurs="1" type="xs:string" />
+						
+			<!-- an unbounded list of "pages" or iterators -->
+                        <xs:element name="iterator" minOccurs="1" maxOccurs="unbounded">
+						
+                            <xs:complexType>
+							
+                                <xs:sequence>
+								
+				    <!-- the "page" identifier -->
+                                    <xs:element name="id" minOccurs="1" maxOccurs="1" type="xs:integer" />
+
+                                    <!-- the "page" status -->
+                                    <xs:element name="status" minOccurs="0" maxOccurs="unbounded" type="xs:string" />
+									
+                                    <!-- unbounded list of updates -->
+                                    <xs:element name="update" type="updateType" minOccurs="0" maxOccurs="unbounded" />
+								
+                                </xs:sequence>
+								
+                            </xs:complexType>
+							
+                        </xs:element>
+						
+                    </xs:sequence>
+					
+                </xs:complexType>
+				
+            </xs:element>
+
+            <!-- an optional, list of changes -->
+            <xs:element name="change" type="dataChange" minOccurs="0" maxOccurs="1" />
+			
+        </xs:sequence>
+			
+    </xs:complexType>
+	
+	
+    <!-- create a type for sub databases -->
+    <xs:complexType name="childDb">
+	
+        <xs:complexContent>
+		
+            <!-- extend the sites database structure -->
+            <xs:extension base="parentDb">
+			
+                <xs:sequence>
+				
+                    <!-- the domain for this childDb-->
+                    <xs:element name="domain" minOccurs="1" maxOccurs="1" type="xs:string" />
+
+                    <!-- add an identifier ((case|drug) id) -->
+                    <xs:element name="id" minOccurs="1" maxOccurs="1" type="xs:string" />
+
+                    <!-- add a pin (patient id number) -->
+                    <xs:element name="pin" minOccurs="0" maxOccurs="1" type="xs:string" />
+
+                    <!-- add the top level comments (case comment) -->
+                    <xs:element name="comment" minOccurs="0" maxOccurs="1" type="xs:string" />
+
+                    <!-- add the strata -->
+                    <xs:element name="strata" minOccurs="0" maxOccurs="1" type="xs:string" />
+
+                    <!-- an optional, list of changes -->
+                    <xs:element name="change" type="dataChange" minOccurs="0" maxOccurs="1" />
+					
+                </xs:sequence>
+				
+            </xs:extension>
+			
+        </xs:complexContent>
+		
+    </xs:complexType>
+
+    <!-- create a type for updates and comments -->
+    <xs:complexType name="updateType">
+
+        <xs:sequence>
+	    <!-- the field or "item" identifier -->
+            <xs:element name="id" minOccurs="0" maxOccurs="1" type="xs:string" />
+
+            <!-- the new field label or "item" identifier if changed -->
+            <xs:element name="labelChange" minOccurs="0" maxOccurs="1" type="xs:string" />
+
+            <!-- the item status -->
+            <xs:element name="status" minOccurs="0" maxOccurs="1" type="xs:string" />
+
+            <!-- the new value for the database -->
+            <xs:element name="value" minOccurs="0" maxOccurs="1" type="xs:string" />
+
+            <!-- unbounded list of comments -->
+            <xs:element name="comment" minOccurs="0" maxOccurs="unbounded" >
+
+                <xs:complexType>
+
+                    <xs:sequence>
+
+                        <xs:element name="id" minOccurs="1" maxOccurs="1" type="xs:string" />
+
+                        <!-- the comment type -->
+                        <xs:element name="typ" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+                        <!-- the new value for the database -->
+                        <xs:element name="value" minOccurs="1" maxOccurs="1" type="xs:string" />
+
+                    </xs:sequence>
+
+                </xs:complexType>
+
+            </xs:element>
+
+            <!-- unbounded list of queries -->
+            <xs:element name="query" type="queryType" minOccurs="0" maxOccurs="unbounded" />
+
+        </xs:sequence>
+
+    </xs:complexType>
+
+
+    <!-- create a type for query storage -->
+    <xs:complexType name="queryType">
+
+        <xs:sequence>
+
+            <!-- the query id -->
+            <xs:element name="id" minOccurs="1" maxOccurs="1" type="xs:integer"/>
+
+            <!-- the query type -->
+            <xs:element name="typ" minOccurs="1" maxOccurs="1" type="xs:string"/>
+
+            <!-- the query format -->
+            <xs:element name="fmt" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- the form identifier -->
+            <xs:element name="frm" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- the field or "item" identifier -->
+            <xs:element name="itm" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- who issued the query -->
+            <xs:element name="iby" minOccurs="1" maxOccurs="1" type="xs:string"/>
+
+            <!-- the date the query was issued -->
+            <xs:element name="iss" minOccurs="1" maxOccurs="1" type="xs:string"/>
+
+            <!-- the query sheet number -->
+            <xs:element name="qsh" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- the unique query sheet number -->
+            <xs:element name="uqs" minOccurs="1" maxOccurs="1" type="xs:string"/>
+
+            <!-- the print flag??? -->
+            <xs:element name="prt" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- the query status -->
+            <xs:element name="sta" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- the date the query was modified -->
+            <xs:element name="mod" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- the resolved flag -->
+            <xs:element name="res" minOccurs="1" maxOccurs="1" type="xs:string"/>
+
+            <!-- the replied flag -->
+            <xs:element name="rep" minOccurs="1" maxOccurs="1" type="xs:string"/>
+
+            <!-- the resolve code -->
+            <xs:element name="rsv" minOccurs="1" maxOccurs="1" type="xs:string"/>
+
+            <!-- who resolved the query -->
+            <xs:element name="rby" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- the query text -->
+            <xs:element name="val" minOccurs="1" maxOccurs="1" type="xs:string"/>
+
+            <!-- the reply text -->
+            <xs:element name="rpy" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            <!-- the query sig -->
+            <xs:element name="sig" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+        </xs:sequence>
+                        
+    </xs:complexType>
+
+    <!-- create a type for data transfer changes to site, strata, case, pin   -->
+    <xs:complexType name="dataChange">
+            <xs:sequence>
+
+                    <!-- the old parent identifier to modify -->
+                    <xs:element name="parentId" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+                    <!-- the old strata -->
+                    <xs:element name="strata" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+                    <!-- the old subject|drug identifier to modify -->
+                    <xs:element name="childId" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+                    <!-- the old pin -->
+                    <xs:element name="pin" minOccurs="0" maxOccurs="1" type="xs:string"/>
+
+            </xs:sequence>
+
+    </xs:complexType>
+	
+</xs:schema>

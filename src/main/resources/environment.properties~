@@ -1,0 +1,8 @@
+environment.server=gibbon
+environment.path=taxi
+environment.taxi=taxi
+environment.myedctoanswrs.xsl.version=_1_0_4
+environment.activemq.port=61616
+environment.taxi.username=Answrs
+environment.taxi.password=answrs1
+environment.uploadpolltime=2000

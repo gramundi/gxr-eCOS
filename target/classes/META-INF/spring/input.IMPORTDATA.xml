@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd"
+>
+
+	<!-- a route context for NODES -->
+	<routeContext
+		id="input.IMPORTDATA"
+		xmlns="http://camel.apache.org/schema/spring"
+	>
+		<!--
+			A route to handle NODES data
+		-->
+		<route
+			autoStartup="true"
+		>
+
+	 		<!-- get data from Apache ActiveMQ -->
+			<from
+	 		uri="activemq:input.IMPORTDATA" />
+
+			<doTry>
+				<!-- make sure data is transferred in UTF-8 format -->
+				<convertBodyTo type="java.lang.String" charset="UTF-8" />
+
+                                <!-- CONFIGURE_ME: attempt to validate agains the NODES XML schema -->
+                                <to uri="validator:http://[server]/[path]/xsd/input.NODES.xsd" />
+
+                                <!-- CONFIGURE_ME: NODES to ANSWRS transformation -->
+                                <to uri="xslt:http://[server]/[path]/xsl/nodesToAnswrs.xsl" />
+
+				<!-- send to ANSWRS -->
+				<inOut uri="activemq:input.ANSWRS?requestTimeout=60000" />
+
+				<doCatch>
+
+					<!-- it failed to validate -->
+					<exception>org.apache.camel.ValidationException</exception>
+
+					<inOnly uri="activemq:failure.NODES" />
+
+					<!-- update the body -->
+					<setBody>
+
+						<!-- return the Exception name -->
+						<simple>org.apache.camel.ValidationException @ input.NODES</simple>
+
+					</setBody>
+
+				</doCatch>
+
+			</doTry>
+
+			<!-- convert it into a string for transport -->
+			<convertBodyTo type="java.lang.String" />
+
+		</route>
+
+	</routeContext>
+
+</beans>

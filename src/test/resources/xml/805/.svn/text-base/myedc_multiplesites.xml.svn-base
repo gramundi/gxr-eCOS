@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data status="ok" studyid="myedc1889" transformer="1.0.0" type="data_sitelist">
+	<sites>
+		<site>
+			<sitenum>101</sitenum>
+			<siteid>7269</siteid>
+			<sitename>Raleigh Medical</sitename>
+			<type>Site</type>
+			<contact>Eric Emerton</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>0115 9157771</phone>
+			<fax />
+			<active>t</active>
+			<address>Raleigh Medical 123 Main Street Raleigh, NC 12345</address>
+			<addressship>Raleigh Medical 123 Main Street Raleigh, NC 12345</addressship>
+			<country>US</country>
+			<pi>Eric Emerton</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="f" id="1" />
+			</revisions>
+		</site>
+		<site>
+			<sitenum>102</sitenum>
+			<siteid>7289</siteid>
+			<sitename>Durham General</sitename>
+			<type>Site</type>
+			<contact>Eric Emerton</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>123456789</phone>
+			<fax />
+			<active>t</active>
+			<address>Durham General 123 Main Street Durham, NC 12345</address>
+			<addressship>Durham General 123 Main Street Durham, NC 12345</addressship>
+			<country>US</country>
+			<pi>Eric Emerton</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="f" id="1" />
+			</revisions>
+		</site>
+		<site>
+			<sitenum>201</sitenum>
+			<siteid>7290</siteid>
+			<sitename>London General</sitename>
+			<type>Site</type>
+			<contact>Eric Emerton</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>123123123</phone>
+			<fax />
+			<active>t</active>
+			<address>London General 123 Downing Drive London, UK, 1123123123</address>
+			<addressship>London General 123 Downing Drive London, UK, 1123123123</addressship>
+			<country>UK</country>
+			<pi>Eric Emerton</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="f" id="1" />
+			</revisions>
+		</site>
+	</sites>
+</data>

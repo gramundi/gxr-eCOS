@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data status="ok" studyid="myedc1889" transformer="1.0.0" type="data_sitelist">
+	<sites>
+		<site>
+			<sitenum>001</sitenum>
+			<siteid>15489</siteid>
+			<sitename>Test 1</sitename>
+			<type>Site</type>
+			<contact>Answrs Team</contact>
+			<email>anisa.fazal@wwctrials.co.uk</email>
+			<altemail />
+			<phone>0115 956 7711</phone>
+			<fax />
+			<active>t</active>
+			<address>Issac Newton Centre, Nottingham Science Park, University
+				Boulevard, Nottingham, NG7 5TG, UK</address>
+			<addressship>Issac Newton Centre, Nottingham Science Park, University
+				Boulevard, Nottingham, NG7 5TG, UK</addressship>
+			<country>United Kingdom</country>
+			<pi>Test 2 - Investigator - test 3</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="t" id="1" />
+			</revisions>
+		</site>
+	</sites>
+</data>

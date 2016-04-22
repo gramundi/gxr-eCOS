@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data status="ok" studyid="myedc1889" transformer="1.0.0" type="data_sitelist">
+	<sites>
+		<site>
+			<sitenum>101</sitenum>
+			<siteid>7269</siteid>
+			<sitename>Raleigh Medical</sitename>
+			<type>Site</type>
+			<contact>Eric Emerton</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>0115 9157771</phone>
+			<fax />
+			<active>t</active>
+			<address>Raleigh Medical 123 Main Street Raleigh, NC 12345</address>
+			<addressship>Raleigh Medical 123 Main Street Raleigh, NC 12345</addressship>
+			<country>US</country>
+			<pi>Eric Emerton</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="f" id="1" />
+			</revisions>
+		</site>
+		<site>
+			<sitenum>102</sitenum>
+			<siteid>7289</siteid>
+			<sitename>Durham General</sitename>
+			<type>Site</type>
+			<contact>Eric Emerton</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>123456789</phone>
+			<fax />
+			<active>t</active>
+			<address>Durham General 123 Main Street Durham, NC 12345</address>
+			<addressship>Durham General 123 Main Street Durham, NC 12345</addressship>
+			<country>US</country>
+			<pi>Eric Emerton</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="f" id="1" />
+			</revisions>
+		</site>
+		<site>
+			<sitenum>201</sitenum>
+			<siteid>7290</siteid>
+			<sitename>London General</sitename>
+			<type>Site</type>
+			<contact>Eric Emerton</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>123123123</phone>
+			<fax />
+			<active>t</active>
+			<address>London General 123 Downing Drive London, UK, 1123123123</address>
+			<addressship>London General 123 Downing Drive London, UK, 1123123123</addressship>
+			<country>UK</country>
+			<pi>Eric Emerton</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="f" id="1" />
+			</revisions>
+		</site>
+		<site>
+			<sitenum>202</sitenum>
+			<siteid>7270</siteid>
+			<sitename>Brussels Clinic</sitename>
+			<type>Site</type>
+			<contact>Eric Emerton</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>123123123</phone>
+			<fax />
+			<active>t</active>
+			<address>Brussels Clinic 232323 98th Avenue NW Brussels, Belgium,
+				12123123</address>
+			<addressship>Brussels Clinic 232323 98th Avenue NW Brussels, Belgium,
+				12123123</addressship>
+			<country>Belgium</country>
+			<pi>Eric Emerton</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="f" id="1" />
+			</revisions>
+		</site>
+		<site>
+			<sitenum>666</sitenum>
+			<siteid>13449</siteid>
+			<sitename>Answrs Testing</sitename>
+			<type>Drug Shipper</type>
+			<contact>Ricky bobby</contact>
+			<email>test@test.com</email>
+			<altemail />
+			<phone>123456789</phone>
+			<fax>987654321</fax>
+			<active>t</active>
+			<address>Answrs Testing London Road, Nottingham NG1 1AB</address>
+			<addressship>Answrs Testing London Road, Nottingham NG1 1AB</addressship>
+			<country>UK</country>
+			<pi>Steve Butabi</pi>
+			<capall />
+			<caprand />
+			<revisions>
+			</revisions>
+		</site>
+		<site>
+			<sitenum>777</sitenum>
+			<siteid>15489</siteid>
+			<sitename>Test Updated 777</sitename>
+			<type>Site</type>
+			<contact>Answrs 777 Team</contact>
+			<email>anisa.fazal@wwctrials.co.uk</email>
+			<altemail />
+			<phone>0115 956 7777</phone>
+			<fax />
+			<active>t</active>
+			<address>Issac Newton Centre, Nottingham Science Park, University
+				Boulevard, Nottingham, NG7 5TG, United Kingdom</address>
+			<addressship>Issac Newton Centre, Nottingham Science Park, University
+				Boulevard, Nottingham, NG7 5TG, United Kingdom</addressship>
+			<country>United Kingdom</country>
+			<pi>Test Updated 2 - Investigator - test 3</pi>
+			<capall />
+			<caprand />
+			<revisions>
+				<revision canadd="t" canmoveto="t" id="1" />
+			</revisions>
+		</site>
+		<site>
+			<sitenum>990</sitenum>
+			<siteid>7271</siteid>
+			<sitename>ABC Pharma</sitename>
+			<type>Site</type>
+			<contact>Mr Neil Hayes</contact>
+			<email>neil.hayes@test.com</email>
+			<altemail>nmh@nmh.com</altemail>
+			<phone>+44 115 91234567</phone>
+			<fax>+44 115 98765432</fax>
+			<active>t</active>
+			<address>ABC Pharma 1 Main Street, Nottingham, UK NG1 1AB</address>
+			<addressship>ABC Pharma 1 Main Street, Nottingham, UK NG1 1AB</addressship>
+			<country>United Kingdom</country>
+			<pi>Neil Hayes</pi>
+			<capall>1</capall>
+			<caprand>10</caprand>
+			<revisions>
+			</revisions>
+		</site>
+		<site>
+			<sitenum>991</sitenum>
+			<siteid>7272</siteid>
+			<sitename>Track The Trials</sitename>
+			<type>CRO</type>
+			<contact />
+			<email />
+			<altemail />
+			<phone />
+			<fax />
+			<active>t</active>
+			<address />
+			<addressship />
+			<country />
+			<pi />
+			<capall />
+			<caprand />
+			<revisions>
+			</revisions>
+		</site>
+		<site>
+			<sitenum>995</sitenum>
+			<siteid>7273</siteid>
+			<sitename>US Shipper</sitename>
+			<type>Drug Shipper</type>
+			<contact>Joe Smith</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>123123123</phone>
+			<fax />
+			<active>t</active>
+			<address>US Shipper 456 State Avenue Philadelphia, PA 12345</address>
+			<addressship>US Shipper 456 State Avenue Philadelphia, PA 12345</addressship>
+			<country>US</country>
+			<pi />
+			<capall />
+			<caprand />
+			<revisions>
+			</revisions>
+		</site>
+		<site>
+			<sitenum>996</sitenum>
+			<siteid>7291</siteid>
+			<sitename>UK Shipper</sitename>
+			<type>Drug Shipper</type>
+			<contact>Mary Jones</contact>
+			<email>mark.laney@merge.com</email>
+			<altemail />
+			<phone>123456789</phone>
+			<fax />
+			<active>t</active>
+			<address>UK Shipper 56789 14th St London, UK, 123123123</address>
+			<addressship>UK Shipper 56789 14th St London, UK, 123123123</addressship>
+			<country>UK</country>
+			<pi />
+			<capall />
+			<caprand />
+			<revisions>
+			</revisions>
+		</site>
+	</sites>
+</data>

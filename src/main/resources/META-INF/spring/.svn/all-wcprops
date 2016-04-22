@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/CSP/!svn/ver/12171/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring
+END
+input.IMPORTDATA.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring/input.IMPORTDATA.xml
+END
+camel-context_test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/CSP/!svn/ver/11773/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring/camel-context_test.xml
+END
+camel-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/CSP/!svn/ver/12171/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring/camel-context.xml
+END
+config.txt
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring/config.txt
+END
+input.MEDIDATA.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring/input.MEDIDATA.xml
+END
+input.NODES.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring/input.NODES.xml
+END
+input.ANSWRS.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring/input.ANSWRS.xml
+END
+input.MYEDC.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/resources/META-INF/spring/input.MYEDC.xml
+END

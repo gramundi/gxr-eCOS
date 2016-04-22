@@ -1,0 +1,33 @@
+<ecos-dataprocessitems>
+<item studyid="5656" type="ADD_SUBJECT">
+<subjectidentifier>SE340010002</subjectidentifier> 
+<sitenumber>34001</sitenumber> 
+<statusid /> 
+<statusname /> 
+</item>
+<item type="ADD_OR_UPDATE_PAGE_DATA" studyid="5656">
+<subjectid></subjectid>
+<subjectidentifier>SE340010002</subjectidentifier>
+<visitid>1</visitid>
+<visitseq>0</visitseq>
+<pageid>10</pageid>
+<pageseq>0</pageseq>
+<add_data_addpage>false</add_data_addpage>
+<round_or_pad_decimalparts>false</round_or_pad_decimalparts>
+<controlidrepeatingcheck>1</controlidrepeatingcheck>
+<datavalues>
+<control id="1" tablecolumn="EN.ENROLDT">
+<value>1990-01-10</value>
+<reason>Training data import</reason>
+</control>
+<control id="12" tablecolumn="EN.ENROLGR">
+<value>2</value>
+<reason>Training data import</reason>
+</control>
+<control id="3" tablecolumn="EN.ENSCREEN">
+<value>S118</value>
+<reason>Training data import</reason>
+</control>
+</datavalues>
+</item>
+</ecos-dataprocessitems>

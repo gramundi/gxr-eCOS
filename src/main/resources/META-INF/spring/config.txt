@@ -1,0 +1,33 @@
+input.NODES.xml / input.IMPORTDATA.xml
+
+<!-- CONFIGURE_ME: attempt to validate agains the NODES XML schema -->
+<to uri="validator:http://[server]/[path]/xsd/input.NODES.xsd" />
+
+DEV	baboon		~ros
+TEST	localhost	~ros/xml/xsd/
+LIVE	10.104.1.81	/xsd/
+
+
+<!-- CONFIGURE_ME: NODES to ANSWRS transformation -->
+<to uri="xslt:http://[server]/[path]/xsl/nodesToAnswrs.xsl" />
+
+DEV 	baboon		/~ros/nodesToAnswrs.xsl
+TEST	localhost	/~ros/xml/xsl/nodesToAnswrs.xsl
+LIVE	10.104.1.81	/xsl/nodesToAnswrs.xsl"
+
+-----------------------------------------------------------------------------
+
+input.ANSWRS.xml
+
+<!-- CONFIGURE_ME: send the validated data to The ANSWRS XML Importer (TAXI) -->
+<to uri="http://[server]/[path]/?authMethod=Basic&amp;authUsername=Answrs&amp;authPassword=[htpasswd]" />
+
+DEV	baboon:80	~ros/taxi		answrs1
+TEST	localhost:80	~ros/taxi		answrs1
+LIVE	10.104.1.81	taxi/latest/index.php	f9f4066a15dd
+
+removed -
+<!-- validate input against ANSWRS schema -->
+<!--<to uri="validator:http://baboon/~jts/answrs.xml/XSD/input.ANSWRS.xsd"/>-->
+
+

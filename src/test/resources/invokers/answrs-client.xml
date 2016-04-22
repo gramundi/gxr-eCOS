@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camel="http://camel.apache.org/schema/spring"
+	xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<camelContext id="camel-client" xmlns="http://camel.apache.org/schema/spring">
+		<template id="camelTemplate" />
+	</camelContext>
+
+	<bean id="bridgePropertyPlaceholder"
+		class="org.apache.camel.spring.spi.BridgePropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:environment.properties" />
+	</bean>
+
+	<!-- Camel JMSProducer to be able to send messages to Active MQ -->
+	<bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
+		<property name="connectionFactory">
+			<bean class="org.apache.activemq.ActiveMQConnectionFactory">
+				<property name="brokerURL" value="tcp://localhost:${environment.activemq.port}" />
+				<property name="userName" value="system" />
+				<property name="password" value="ENC(mYRkg+4Q4hua1kvpCCI2hg==)" />
+			</bean>
+		</property>
+	</bean>
+</beans>

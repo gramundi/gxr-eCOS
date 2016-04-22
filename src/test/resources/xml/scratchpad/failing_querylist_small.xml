@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<answrs>
+	<datasource>
+		<incoming-timestamp>2012-12-05T10:51:24.961Z</incoming-timestamp>
+		<processed-timestamp>2012-12-05T10:51:24.961Z</processed-timestamp>
+		<remote-addr>127.0.0.1</remote-addr>
+		<target-schema>myedc1889</target-schema>
+		<schema-version>myEDC</schema-version>
+	</datasource>
+	<country>
+		<iso>ZZ</iso>
+		<parent>
+			<id>-1</id>
+			<domain>site</domain>
+			<parentDb>
+				<form>
+					<id>data_querylist</id>
+					<iterator>
+						<id>7</id>
+						<update>
+							<id>subid</id>
+							<value>26096</value>
+						</update>
+						<update>
+							<id>subnum</id>
+							<value>101</value>
+						</update>
+						<update>
+							<id>visitid</id>
+							<value>14</value>
+						</update>
+						<update>
+							<id>visitseq</id>
+							<value>0</value>
+						</update>
+						<update>
+							<id>pageid</id>
+							<value>20</value>
+						</update>
+						<update>
+							<id>pageseq</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>controlid</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>id</id>
+							<value>34</value>
+						</update>
+						<update>
+							<id>typeid</id>
+							<value>15</value>
+						</update>
+						<update>
+							<id>typename</id>
+							<value>DM Query</value>
+						</update>
+						<update>
+							<id>statusid</id>
+							<value>0</value>
+						</update>
+						<update>
+							<id>statusname</id>
+							<value>Open</value>
+						</update>
+						<update>
+							<id>answered</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>closed</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>sysqname</id>
+							<value />
+						</update>
+						<update>
+							<id>subline</id>
+							<value>test</value>
+						</update>
+						<update>
+							<id>lastmbyid</id>
+							<value>24909</value>
+						</update>
+						<update>
+							<id>lastmby</id>
+							<value>Ahmed, Shakeel</value>
+						</update>
+						<update>
+							<id>lastmdt</id>
+							<value>2012-11-22 14:46:03</value>
+						</update>
+						<update>
+							<id>deleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>pagedeleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>subjectdeleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>revision</id>
+							<value>4</value>
+						</update>
+						<update>
+							<id>qry_revision</id>
+							<value>3</value>
+						</update>
+						<update>
+							<id>qry_lastmbyid</id>
+							<value>222846</value>
+						</update>
+						<update>
+							<id>qry_lastmby</id>
+							<value>Ahmed, Shakeel</value>
+						</update>
+						<update>
+							<id>qry_lastmdt</id>
+							<value>2012-11-22 14:44:20</value>
+						</update>
+						<update>
+							<id>qry_comments</id>
+							<value>amg</value>
+						</update>
+					</iterator>
+				</form>
+				<form>
+					<id>data_querylist</id>
+					<iterator>
+						<id>8</id>
+						<update>
+							<id>subid</id>
+							<value>26096</value>
+						</update>
+						<update>
+							<id>subnum</id>
+							<value>101</value>
+						</update>
+						<update>
+							<id>visitid</id>
+							<value>14</value>
+						</update>
+						<update>
+							<id>visitseq</id>
+							<value>0</value>
+						</update>
+						<update>
+							<id>pageid</id>
+							<value>20</value>
+						</update>
+						<update>
+							<id>pageseq</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>controlid</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>id</id>
+							<value>34</value>
+						</update>
+						<update>
+							<id>typeid</id>
+							<value>15</value>
+						</update>
+						<update>
+							<id>typename</id>
+							<value>DM Query</value>
+						</update>
+						<update>
+							<id>statusid</id>
+							<value>0</value>
+						</update>
+						<update>
+							<id>statusname</id>
+							<value>Open</value>
+						</update>
+						<update>
+							<id>answered</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>closed</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>sysqname</id>
+							<value />
+						</update>
+						<update>
+							<id>subline</id>
+							<value>test</value>
+						</update>
+						<update>
+							<id>lastmbyid</id>
+							<value>24909</value>
+						</update>
+						<update>
+							<id>lastmby</id>
+							<value>Ahmed, Shakeel</value>
+						</update>
+						<update>
+							<id>lastmdt</id>
+							<value>2012-11-22 14:46:03</value>
+						</update>
+						<update>
+							<id>deleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>pagedeleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>subjectdeleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>revision</id>
+							<value>4</value>
+						</update>
+						<update>
+							<id>qry_revision</id>
+							<value>2</value>
+						</update>
+						<update>
+							<id>qry_lastmbyid</id>
+							<value>222846</value>
+						</update>
+						<update>
+							<id>qry_lastmby</id>
+							<value>Ahmed, Shakeel</value>
+						</update>
+						<update>
+							<id>qry_lastmdt</id>
+							<value>2012-11-22 14:42:02</value>
+						</update>
+						<update>
+							<id>qry_comments</id>
+							<value>amg</value>
+						</update>
+					</iterator>
+				</form>
+				<form>
+					<id>data_querylist</id>
+					<iterator>
+						<id>9</id>
+						<update>
+							<id>subid</id>
+							<value>26096</value>
+						</update>
+						<update>
+							<id>subnum</id>
+							<value>101</value>
+						</update>
+						<update>
+							<id>visitid</id>
+							<value>14</value>
+						</update>
+						<update>
+							<id>visitseq</id>
+							<value>0</value>
+						</update>
+						<update>
+							<id>pageid</id>
+							<value>20</value>
+						</update>
+						<update>
+							<id>pageseq</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>controlid</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>id</id>
+							<value>34</value>
+						</update>
+						<update>
+							<id>typeid</id>
+							<value>15</value>
+						</update>
+						<update>
+							<id>typename</id>
+							<value>DM Query</value>
+						</update>
+						<update>
+							<id>statusid</id>
+							<value>0</value>
+						</update>
+						<update>
+							<id>statusname</id>
+							<value>Open</value>
+						</update>
+						<update>
+							<id>answered</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>closed</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>sysqname</id>
+							<value />
+						</update>
+						<update>
+							<id>subline</id>
+							<value>test</value>
+						</update>
+						<update>
+							<id>lastmbyid</id>
+							<value>24909</value>
+						</update>
+						<update>
+							<id>lastmby</id>
+							<value>Ahmed, Shakeel</value>
+						</update>
+						<update>
+							<id>lastmdt</id>
+							<value>2012-11-22 14:46:03</value>
+						</update>
+						<update>
+							<id>deleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>pagedeleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>subjectdeleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>revision</id>
+							<value>4</value>
+						</update>
+						<update>
+							<id>qry_revision</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>qry_lastmbyid</id>
+							<value>222846</value>
+						</update>
+						<update>
+							<id>qry_lastmby</id>
+							<value>Ahmed, Shakeel</value>
+						</update>
+						<update>
+							<id>qry_lastmdt</id>
+							<value>2012-11-22 14:41:33</value>
+						</update>
+						<update>
+							<id>qry_comments</id>
+							<value>Northenden is located in the southern end of the city of
+								Manchester, 5.2 miles (8.4 km) from the city centre, and begins
+								on the south bank of the River Mersey.
+								Northenden is now in a
+								triangle formed by two motorways (the M56 and M60)
+								and a main
+								dual carriageway (Princess Parkway). Manchester
+								Airport is
+								approximately 4 miles to the south by road.
+								Northenden is part of
+								the South Manchester district of
+								Wythenshawe and is in the same
+								postal area code and
+								Parliamentary ward (Wythenshawe and Sale
+								East). However, in
+								2006, after Manchester City Council erected a
+								road sign that
+								said "Welcome to Northenden, Wythenshawe", many
+								Northenden
+								residents protested the inclusion of the word
+								"Wythenshawe". The
+								residents were accused by one local councillor
+								of snobbish
+								behaviour and attempting to distance themselves from
+								the
+								Wythenshawe area (which is primarily social housing) for the
+								sake of house prices as well as wanting to be seen more as an
+								extension of the affluent neighbouring Didsbury area. The city
+								council agreed to remove the word "Wythenshawe" from the sign,
+								though Northenden still remains a part of the Wythenshawe area
+								with the same postal area code and electoral boundaries. Funny
+								word: Marañón</value>
+						</update>
+					</iterator>
+				</form>
+				<form>
+					<id>data_querylist</id>
+					<iterator>
+						<id>10</id>
+						<update>
+							<id>subid</id>
+							<value>58787</value>
+						</update>
+						<update>
+							<id>subnum</id>
+							<value>101201</value>
+						</update>
+						<update>
+							<id>visitid</id>
+							<value>14</value>
+						</update>
+						<update>
+							<id>visitseq</id>
+							<value>0</value>
+						</update>
+						<update>
+							<id>pageid</id>
+							<value>20</value>
+						</update>
+						<update>
+							<id>pageseq</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>controlid</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>id</id>
+							<value>33</value>
+						</update>
+						<update>
+							<id>typeid</id>
+							<value>15</value>
+						</update>
+						<update>
+							<id>typename</id>
+							<value>DM Query</value>
+						</update>
+						<update>
+							<id>statusid</id>
+							<value>0</value>
+						</update>
+						<update>
+							<id>statusname</id>
+							<value>Open</value>
+						</update>
+						<update>
+							<id>answered</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>closed</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>sysqname</id>
+							<value />
+						</update>
+						<update>
+							<id>subline</id>
+							<value>Entering UTF8 characters</value>
+						</update>
+						<update>
+							<id>lastmbyid</id>
+							<value>24909</value>
+						</update>
+						<update>
+							<id>lastmby</id>
+							<value>Ahmed, Shakeel</value>
+						</update>
+						<update>
+							<id>lastmdt</id>
+							<value>2012-11-22 13:34:56</value>
+						</update>
+						<update>
+							<id>deleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>pagedeleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>subjectdeleted</id>
+							<value>f</value>
+						</update>
+						<update>
+							<id>revision</id>
+							<value>2</value>
+						</update>
+						<update>
+							<id>qry_revision</id>
+							<value>2</value>
+						</update>
+						<update>
+							<id>qry_lastmbyid</id>
+							<value>222845</value>
+						</update>
+						<update>
+							<id>qry_lastmby</id>
+							<value>Ahmed, Shakeel</value>
+						</update>
+						<update>
+							<id>qry_lastmdt</id>
+							<value>2012-11-22 13:34:56</value>
+						</update>
+						<update>
+							<id>qry_comments</id>
+							<value>Meandrina meandrites, commonly known as maze coral, is a
+								species of colonial stony coral in the family Meandrinidae. It
+								is found primarily on outer coral reef slopes in the Caribbean
+								Sea and the Gulf of Mexico. -cr- Meandrina meandrites forms
+								massive hemispherical heads or develops into substantial flat
+								plates and can grow to nearly 1 metre (3 ft 3 in) in diameter.
+								Some small colonies are cone-shaped and are not attached to the
+								substrate. These resemble young colonies of rose coral (Manicina
+								areolata) and may be found in sandy or muddy areas some way from
+								reefs. The corallites, the calcareous cups secreted by the
+								polyps, are 1 to 2 cm (0.4 to 0.8 in) wide. The raised walls
+								between the corallites are formed from fine but widely separated
+								transverse ridges called septae and meander over the surface of
+								the coral. There is a slight indentation running along the crest
+								of the walls where the septae from adjoining corallites meet.
+								The polyps are large but are only protruded at night when they
+								cover and obscure the skeleton of the coral.[3][4] -cr- -cr-
+								Meandrina meandrites is found in Bermuda, Florida, the Caribbean
+								Sea, the Gulf of Mexico and the Bahamas. It mainly occurs on the
+								seaward sides of reefs but does also occur on back slopes. Its
+								favoured depth range is 8 to 30 metres (26 to 98 ft) but it
+								occurs at any depth less than 80 metres (260 ft). It tolerates
+								locations with high levels of sedimentation and turbidity. It is
+								generally a common species and is the coral most frequently seen
+								in the deeper parts of its range.[1][4] -cr- -cr- The IUCN Red
+								List of Threatened Species lists Meandrina meandrites as being
+								of "Least Concern". This is because, although it is effected by
+								coral bleaching, it is more resistant than some other species
+								and usually recovers. It is also subject to coral diseases such
+								as white plague and black band disease. Another factor that
+								helps to maintain populations is the high level of recruitment
+								of juvenile corals [1] which is in contrast to the recruitment
+								failures of the pineapple coral (Dichocoenia stokesi).[5] The
+								chief threats it faces, as do other reef corals, are raised sea
+								temperatures, ocean acidification and reef destruction. It is
+								present in a number of marine parks which gives it some level of
+								protection.[1]</value>
+						</update>
+					</iterator>
+				</form>
+			</parentDb>
+		</parent>
+	</country>
+</answrs>

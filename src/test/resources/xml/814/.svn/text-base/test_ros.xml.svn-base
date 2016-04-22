@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<answrs>
+	<datasource>
+		<incoming-timestamp>2012-12-06T10:47:56.775Z</incoming-timestamp>
+		<processed-timestamp>2012-12-06T10:47:56.775Z</processed-timestamp>
+		<remote-addr>127.0.0.1</remote-addr>
+		<target-schema>myedc1889</target-schema>
+		<schema-version>myEDC</schema-version>
+	</datasource>
+	<country>
+		<iso>ZZ</iso>
+		<parent>
+			<id>777</id>
+			<domain>site</domain>
+			<childDb>
+				<form>
+					<id>data_subjectlist</id>
+					<iterator>
+						<id>26894</id>
+						<update>
+							<id>siteid</id>
+							<value>7269</value>
+						</update>
+						<update>
+							<id>sitenum</id>
+							<value>101</value>
+						</update>
+						<update>
+							<id>subid</id>
+							<value>26894</value>
+						</update>
+						<update>
+							<id>subnum</id>
+							<value>001007</value>
+						</update>
+						<update>
+							<id>ident2</id>
+							<value>2012-07-30</value>
+						</update>
+						<update>
+							<id>ident3</id>
+							<value />
+						</update>
+						<update>
+							<id>revnum</id>
+							<value>1</value>
+						</update>
+						<update>
+							<id>statusid</id>
+							<value>10</value>
+						</update>
+						<update>
+							<id>statusname</id>
+							<value>Early Discontinued</value>
+						</update>
+						<update>
+							<id>deleted</id>
+							<value>f</value>
+						</update>
+					</iterator>
+				</form>
+				<domain>subject</domain>
+				<id>26894</id>
+			</childDb>
+		</parent>
+	</country>
+</answrs>

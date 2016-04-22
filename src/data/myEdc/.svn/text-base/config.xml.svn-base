@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+	<login>
+		<url>https://www.eclinicalos.com/edc_studyservices.jsp</url>
+		<username>wctanswrs</username>
+		<password>Answrs109</password>
+	</login>
+	<!-- DEMO -->
+	<study>
+		<studyid>6092</studyid>
+                <studyupload>true</studyupload>
+		<data>
+			<source>data_subjectlist</source>
+			<param1>no</param1>
+			<frequency>hourly</frequency>
+      		<transformer>1.0.4</transformer>
+		</data>
+	</study>
+</config>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+	<login>
+		<url>https://www.eclinicalos.com/edc_studyservices.jsp</url>
+		<username>wctanswrs</username>
+		<password>Answrs101</password>
+	</login>
+	<study>
+		<studyid>1889</studyid>
+		<!-- site -->
+		<data>
+			<source>data_sitelist</source>
+			<frequency>hourly</frequency>
+      			<transformer>1.0.2</transformer>
+		</data>
+		<data>
+			<source>data_pagestatus</source>
+			<frequency>hourly</frequency>
+      			<transformer>1.0.2</transformer>
+		</data>
+		<data>
+			<source>data_subjectlist</source>
+			<frequency>hourly</frequency>
+      			<transformer>1.0.2</transformer>
+		</data>		
+		<data>
+			<source>data_querylist</source>
+			<frequency>hourly</frequency>
+      			<transformer>1.0.2</transformer>
+		</data>
+		<data>
+			<source>design_visitschedules</source>
+			<frequency>daily</frequency>
+      			<transformer>1.0.2</transformer>
+		</data>
+	</study>
+</config>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data status="ok" studyid="myedc1889" transformer="1.0.0"
+	type="data_subjectlist">
+	<subjects>
+		<subject>
+			<siteid>7269</siteid>
+			<sitenum>101</sitenum>
+			<subid>26894</subid>
+			<subnum>001007</subnum>
+			<ident2>2012-07-30</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>10</statusid>
+			<statusname>Early Discontinued</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>7269</siteid>
+			<sitenum>101</sitenum>
+			<subid>26096</subid>
+			<subnum>101</subnum>
+			<ident2>2012-07-18</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>7269</siteid>
+			<sitenum>101</sitenum>
+			<subid>58787</subid>
+			<subnum>101201</subnum>
+			<ident2>2012-05-28</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>7269</siteid>
+			<sitenum>101</sitenum>
+			<subid>58968</subid>
+			<subnum>101202</subnum>
+			<ident2>2012-05-28</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>15489</siteid>
+			<sitenum>777</sitenum>
+			<subid>62107</subid>
+			<subnum>2244</subnum>
+			<ident2>2012-12-03</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>15489</siteid>
+			<sitenum>777</sitenum>
+			<subid>57887</subid>
+			<subnum>501001</subnum>
+			<ident2>2012-10-28</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>7269</siteid>
+			<sitenum>101</sitenum>
+			<subid>60709</subid>
+			<subnum>798706</subnum>
+			<ident2>2012-11-29</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>7289</siteid>
+			<sitenum>102</sitenum>
+			<subid>35543</subid>
+			<subnum>888</subnum>
+			<ident2>2012-09-06</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>7291</siteid>
+			<sitenum>996</sitenum>
+			<subid>56707</subid>
+			<subnum>996103</subnum>
+			<ident2>2012-11-12</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+		<subject>
+			<siteid>7289</siteid>
+			<sitenum>102</sitenum>
+			<subid>33963</subid>
+			<subnum>999</subnum>
+			<ident2>2012-08-30</ident2>
+			<ident3 />
+			<revnum>1</revnum>
+			<statusid>0</statusid>
+			<statusname>Enrolled</statusname>
+			<deleted>f</deleted>
+		</subject>
+	</subjects>
+</data>

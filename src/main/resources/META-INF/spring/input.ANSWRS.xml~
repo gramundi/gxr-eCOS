@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		 http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<routeContext id="input.ANSWRS" xmlns="http://camel.apache.org/schema/spring">
+		<!-- A route to handle ANSWRS data -->
+		<route autoStartup="true">
+
+			<!-- get data from Apache ActiveMQ -->
+			<from uri="activemq:input.ANSWRS" />
+
+			<!-- make sure data is transferred in UTF-8 format -->
+			<to uri="bean:utf8FilterBean"/>
+
+			<wireTap uri="activemq:wiretap.ANSWRS"/>
+			<log message="INCOMING ANSWRS:\n ${body}" loggingLevel="DEBUG" />
+			
+			<!-- explain that there will be a reply :) -->
+			<setExchangePattern pattern="InOut" />
+
+			<doTry>
+
+				<setHeader headerName="CamelHttpMethod">
+					<constant>POST</constant>
+				</setHeader>
+				
+				<setHeader headerName="CamelHttpCharacterEncoding">
+					<constant>UTF-8</constant>
+				</setHeader>
+								
+				<choice>
+					<when>
+						<xpath>/answrs/datasource/schema-version = 'myEDC'</xpath>
+					
+						<to
+							uri="http://{{environment.server}}/{{environment.path}}/{{environment.taxi}}/?authMethod=Basic&amp;authUsername=Answrs&amp;authPassword=answrs1" />
+					</when>
+					<otherwise>
+						<to
+							uri="http://{{environment.server}}/{{environment.path}}/{{environment.taxi}}/?authMethod=Basic&amp;authUsername=Answrs&amp;authPassword=answrs1" />
+					</otherwise>
+				</choice>
+				<doCatch>
+					<!-- failed to validate against ANSWRS schema -->
+					<exception>org.apache.camel.ValidationException</exception>
+					<!-- update body -->
+					<setBody>
+						<!-- exception name -->
+						<simple>org.apache.camel.ValidationException @ input.ANSWRS
+						</simple>
+					</setBody>
+				</doCatch>
+				<doCatch>
+					<!-- failed to connect to ANSWRS -->
+					<exception>org.apache.camel.component.http.HttpOperationFailedException</exception>
+					
+					<log message="EXCEPTION:\n ${exception}"/>
+					
+					<choice>
+						<!-- send myEDC failures to failure.MY_EDC -->
+						<when>
+							<xpath>/answrs/datasource/schema-version = 'myEDC'</xpath>
+							<inOnly uri="activemq:failure.MY_EDC" />
+						</when>
+						<otherwise>
+							<inOnly uri="activemq:failure.ANSWRS" />
+						</otherwise>
+
+					</choice>
+
+					<setBody>
+						<simple>org.apache.camel.component.http.HttpOperationFailedException @ input.ANSWRS</simple>
+					</setBody>
+
+				</doCatch>
+
+				<doFinally>
+
+					<!-- convert it into a string for transport -->
+					<convertBodyTo type="java.lang.String" />
+					<log message="ANSWRS RESPONSE: ${body}"/>
+				</doFinally>
+
+			</doTry>
+
+		</route>
+
+	</routeContext>
+
+</beans>

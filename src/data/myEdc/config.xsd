@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="config" type="configType"/>
+  <xs:complexType name="loginType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="url"/>
+      <xs:element type="xs:string" name="username"/>
+      <xs:element type="xs:string" name="password"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dataType">
+    <xs:sequence>
+      <xs:element name="source">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="param1" minOccurs="0" maxOccurs="1">
+      	<xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="param2" minOccurs="0" maxOccurs="1">
+      	<xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="param3" minOccurs="0" maxOccurs="1">
+      	<xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="frequency">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="daily"/>
+            <xs:enumeration value="hourly"/>
+            <xs:enumeration value="disabled"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="transformer">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="studyType">
+    <xs:sequence>
+      <xs:element name="studyid">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="dataType" name="data" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="configType">
+    <xs:sequence>
+      <xs:element type="loginType" name="login"/>
+      <xs:element type="studyType" name="study" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

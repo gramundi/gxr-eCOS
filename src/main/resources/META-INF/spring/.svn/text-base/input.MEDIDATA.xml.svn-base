@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd"
+>
+
+	<!-- a route context for NODES -->
+	<routeContext
+		id="input.MEDIDATA"
+		xmlns="http://camel.apache.org/schema/spring"
+	>
+		<!--
+			A route to handle NODES data
+		-->
+		<route
+			autoStartup="true"
+		>
+
+	 		<!-- get data from Apache ActiveMQ -->
+			<from
+	 		uri="activemq:input.MEDIDATA" />
+
+			<doTry>
+
+				<!-- attempt to validate agains the NODES schema -->
+				<!-- DEV -->
+				<to uri="validator:http://127.0.0.1/~ros/input.NODES.xsd" />
+				<!-- TEST -->
+				<!-- 	<to uri="validator:http://localhost/~ros/xml/xsd/input.NODES.xsd" /> -->
+
+				<!-- transform NODES to ANSWRS -->
+				<!-- DEV -->
+				<to uri="xslt:http://127.0.0.1/~ros/nodesToAnswrs.xsl" />
+				<!-- TEST -->
+				<!-- <to uri="xslt:http://localhost/~ros/xml/xsl/nodesToAnswrs.xsl" /> -->
+
+
+				<!-- send to ANSWRS -->
+				<inOut uri="activemq:input.ANSWRS?requestTimeout=60000" />
+
+				<doCatch>
+
+					<!-- it failed to validate -->
+					<exception>org.apache.camel.ValidationException</exception>
+
+					<inOnly uri="activemq:failure.NODES" />
+
+					<!-- update the body -->
+					<setBody>
+
+						<!-- return the Exception name -->
+						<simple>org.apache.camel.ValidationException @ input.NODES</simple>
+
+					</setBody>
+
+				</doCatch>
+
+			</doTry>
+
+			<!-- convert it into a string for transport -->
+			<convertBodyTo type="java.lang.String" />
+
+		</route>
+
+	</routeContext>
+
+</beans>

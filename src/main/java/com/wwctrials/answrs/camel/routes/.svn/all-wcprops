@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/routes
+END
+MyEdcToAnswrsXSLRouteBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/routes/MyEdcToAnswrsXSLRouteBuilder.java
+END
+AnswrsPreprocessingRouteBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/routes/AnswrsPreprocessingRouteBuilder.java
+END
+AnswrsTaxiRouteBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/routes/AnswrsTaxiRouteBuilder.java
+END
+MyEdcUploadRouteBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/CSP/!svn/ver/11771/Projects/ANSWRS/source/module/camel/branches/gxr-eCOS/src/main/java/com/wwctrials/answrs/camel/routes/MyEdcUploadRouteBuilder.java
+END

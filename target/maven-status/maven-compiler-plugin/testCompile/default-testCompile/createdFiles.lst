@@ -1,0 +1,11 @@
+invokers/AnswrsClient.class
+Utf8Test.class
+invokers/ManualTestInvoker.class
+com/wwctrials/answrs/jaxb/SdsNodesDataTest.class
+xslt/MyEdcToAnswrsXslt1_0_1Test.class
+xslt/MyEdcToAnswrsXsltTest.class
+routes/AnswrsRouteTest.class
+com/wwctrials/answrs/camel/Utf8StringEncodingTest.class
+invokers/SendFileRecordsToQueueBean.class
+com/wwctrials/answrs/camel/MyEdcPreProcessorHelperTest.class
+routes/NodesEcosUploadTest.class

@@ -1,0 +1,149 @@
+<reply status="ok" type="data_querylist">
+	<queries>
+		<query>
+			<subid>60709</subid>
+			<subnum>798706</subnum>
+			<visitid>10</visitid> 
+			<visitseq>0</visitseq>
+			<pageid>10</pageid>
+			<pageseq>0</pageseq>
+			<controlid>1</controlid>
+			<id>37</id>
+			<typeid>0</typeid>
+			<typename>System Query</typename>
+			<statusid>0</statusid>
+			<statusname>Open</statusname>
+			<answered>f</answered>
+			<closed>f</closed>
+			<sysqname>SYSQ_0022</sysqname>
+			<subline>Please provide date of informed consent.</subline>
+			<lastmbyid>11009</lastmbyid>
+			<lastmby>ANSWRS, WCT</lastmby>
+			<lastmdt>2012-11-29 17:23:38</lastmdt>
+			<deleted>f</deleted>
+			<pagedeleted>f</pagedeleted>
+			<subjectdeleted>f</subjectdeleted>
+			<revision>1</revision>
+			<querycomments>
+				<querycomment>
+					<revision>1</revision>
+					<lastmbyid>228467</lastmbyid>
+					<lastmby>ANSWRS, WCT</lastmby>
+					<lastmdt>2012-11-29 17:23:38</lastmdt>
+					<comments>Please provide date of informed consent.</comments>
+				</querycomment>
+			</querycomments>
+		</query>
+		<query>
+			<subid>33963</subid>
+			<subnum>999</subnum>
+			<visitid>14</visitid> 
+			<visitseq>0</visitseq>
+			<pageid>40</pageid>
+			<pageseq>1</pageseq>
+			<controlid>1</controlid>
+			<id>36</id>
+			<typeid>0</typeid>
+			<typename>System Query</typename>
+			<statusid>0</statusid>
+			<statusname>Open</statusname>
+			<answered>f</answered>
+			<closed>f</closed>
+			<sysqname>PCTIMEPT</sysqname>
+			<subline>"Timepoint" cannot be empty.</subline>
+			<lastmbyid>11009</lastmbyid>
+			<lastmby>ANSWRS, WCT</lastmby>
+			<lastmdt>2012-11-26 15:14:30</lastmdt>
+			<deleted>f</deleted>
+			<pagedeleted>f</pagedeleted>
+			<subjectdeleted>f</subjectdeleted>
+			<revision>1</revision>
+			<querycomments>
+				<querycomment>
+					<revision>1</revision>
+					<lastmbyid>224728</lastmbyid>
+					<lastmby>ANSWRS, WCT</lastmby>
+					<lastmdt>2012-11-26 15:14:30</lastmdt>
+					<comments>"Timepoint" cannot be empty.</comments>
+				</querycomment>
+			</querycomments>
+		</query>
+		<query>
+			<subid>56707</subid>
+			<subnum>996103</subnum>
+			<visitid>10</visitid> 
+			<visitseq>0</visitseq>
+			<pageid>20</pageid>
+			<pageseq>0</pageseq>
+			<controlid>1</controlid>
+			<id>35</id>
+			<typeid>0</typeid>
+			<typename>System Query</typename>
+			<statusid>0</statusid>
+			<statusname>Open</statusname>
+			<answered>f</answered>
+			<closed>f</closed>
+			<sysqname>SYSQ_0026</sysqname>
+			<subline>If the patient failed a criteria, they cannot be randomized into the study. Please review all responses.</subline>
+			<lastmbyid>11009</lastmbyid>
+			<lastmby>ANSWRS, WCT</lastmby>
+			<lastmdt>2012-11-22 15:18:25</lastmdt>
+			<deleted>f</deleted>
+			<pagedeleted>f</pagedeleted>
+			<subjectdeleted>f</subjectdeleted>
+			<revision>1</revision>
+			<querycomments>
+				<querycomment>
+					<revision>1</revision>
+					<lastmbyid>222867</lastmbyid>
+					<lastmby>ANSWRS, WCT</lastmby>
+					<lastmdt>2012-11-22 15:18:25</lastmdt>
+					<comments>If the patient failed a criteria, they cannot be randomized into the study. Please review all responses.</comments>
+				</querycomment>
+			</querycomments>
+		</query>
+		<query>
+			<subid>26096</subid>
+			<subnum>101</subnum>
+			<visitid>14</visitid> 
+			<visitseq>0</visitseq>
+			<pageid>20</pageid>
+			<pageseq>1</pageseq>
+			<controlid>1</controlid>
+			<id>34</id>
+			<typeid>15</typeid>
+			<typename>DM Query</typename>
+			<statusid>0</statusid>
+			<statusname>Open</statusname>
+			<answered>f</answered>
+			<closed>f</closed>
+			<sysqname></sysqname>
+			<subline>test</subline>
+			<lastmbyid>24909</lastmbyid>
+			<lastmby>Ahmed, Shakeel</lastmby>
+			<lastmdt>2012-11-22 14:46:03</lastmdt>
+			<deleted>f</deleted>
+			<pagedeleted>f</pagedeleted>
+			<subjectdeleted>f</subjectdeleted>
+			<revision>4</revision>
+			<querycomments>
+				<querycomment>
+					<revision>4</revision>
+					<lastmbyid>222846</lastmbyid>
+					<lastmby>Ahmed, Shakeel</lastmby>
+					<lastmdt>2012-11-22 14:46:03</lastmdt>
+					<comments>This holds a maximum of ~3500 characters</comments>
+				</querycomment>
+				<querycomment>
+					<revision>3</revision>
+					<lastmbyid>222846</lastmbyid>
+					<lastmby>Ahmed, Shakeel</lastmby>
+					<lastmdt>2012-11-22 14:44:20</lastmdt>
+					<comments>*************The Amazon River (US play /'æm?z?n/ or UK /'æm?z?n/; Spanish &amp; Portuguese: Amazonas) in South America is the second longest [2][not in citation given] river in the world and by far the largest by waterflow with an average discharge greater than the next seven largest rivers combined (not including Madeira and Rio Negro, which are tributaries of the Amazon). The Amazon, which has the largest drainage basin in the world, about 7,050,000 square kilometres (2,720,000 sq mi), accounts for approximately one-fifth of the world's total river flow.[3][4] -cr-  -cr- In its upper stretches, above the confluence of the Rio Negro, the Amazon is called Solimões in Brazil; however, in Peru, Colombia and Ecuador, as well as the rest of the Spanish-speaking world, the river is generally called the Amazon downstream from the confluence of the Marañón and Ucayali rivers in Peru. The Ucayali-Apurímac river system is considered the main source of the Amazon. -cr-  -cr- The width of the Amazon varies between 1.6 and 10 kilometres (1.0 and 6.2 mi) at low stage, but expands during the wet season to 48 kilometres (30 mi) or more. The river enters the Atlantic Ocean in a broad estuary about 240 kilometres (150 mi) wide. The mouth of the main stem is 80 kilometres (50 mi).[5] Because of its vast dimensions, it is sometimes called The River Sea. The first bridge in the Amazon river system (over the Rio Negro) opened on 10 October 2010. It is in the immediate vicinity of the city of Manaus. -cr-  -cr- Main article: Amazon Basin -cr-  -cr- The Amazon Basin, the largest in the world, covers about 30% of South America, an area of approximately 7,050,000 square kilometres (2,720,000 sq mi). It drains from west to east, from Iquitos in Peru to all the way across Brazil to the Atlantic. It gathers its waters from 5 degrees north latitude to 20 degrees south latitude. Its most remote sources are found on the inter-Andean plateau, just a short distance from the Pacific Ocean. -cr-  -cr- The Amazon River and its tributaries are characterized by extensive forested areas that become flooded every rainy season. Every year the river rises more than 9 metres (30 ft), flooding the surrounding forests, known as várzea ("flooded forests"). The Amazon's flooded forests are the most extensive example of this habitat type in the world.[6] In an average dry season, 110,000 square kilometres (42,000 sq mi) of land are water-covered, while in the wet season, the flooded area of the Amazon Basin rises to 350,000 square kilometres (140,000 sq mi).[7] -cr-  -cr- The Amazon Basin, the largest in the world, covers about 30% of South America, an area of approximately 7,050,000 square kilometres (2,720,000 sq mi). It drains from west to east, from Iquitos in Peru to all the way across Brazil to the Atlantic. It gathers its waters from 5 degrees north latitude to 20 degrees south latitude. Its most remote sources are found on the inter-Andean plateau, just a short distance from the Pacific Ocean. -cr-  -cr- The Amazon River and its tributaries are characterized by extensive forested areas that become flooded every rainy season. Every year the river rises more than 9 metres (30 ft), flooding the surrounding forests, known as várzea ("flooded forests"). The Amazon's flooded forests are the most extensive example of this habitat type in the world.[6] In an average dry season, 110,000 square kilometres (42,000 sq mi) of land are water-covered, while in the wet season, the flooded area of the Amazon Basin rises to 350,000 square kilometres (140,000 sq mi).[7]***********</comments>
+				</querycomment>
+				<querycomment>
+					<revision>2</revision>
+					<lastmbyid>222846</lastmbyid>
+					<lastmby>Ahmed, Shakeel</lastmby>
+					<lastmdt>2012-11-22 14:42:02</lastmdt>
+					<comments>The Amazon River (US play /'æm?z?n/ or UK /'æm?z?n/; Spanish &amp; Portuguese: Amazonas) in South America is the second longest [2][not in citation given] river in the world and by far the largest by waterflow with an average discharge greater than the next seven largest rivers combined (not including Madeira and Rio Negro, which are tributaries of the Amazon). The Amazon, which has the largest drainage basin in the world, about 7,050,000 square kilometres (2,720,000 sq mi), accounts for approximately one-fifth of the world's total river flow.[3][4] -cr-  -cr- In its upper stretches, above the confluence of the Rio Negro, the Amazon is called Solimões in Brazil; however, in Peru, Colombia and Ecuador, as well as the rest of the Spanish-speaking world, the river is generally called the Amazon downstream from the confluence of the Marañón and Ucayali rivers in Peru. The Ucayali-Apurímac river system is considered the main source of the Amazon. -cr-  -cr- The width of the Amazon varies between 1.6 and 10 kilometres (1.0 and 6.2 mi) at low stage, but expands during the wet season to 48 kilometres (30 mi) or more. The river enters the Atlantic Ocean in a broad estuary about 240 kilometres (150 mi) wide. The mouth of the main stem is 80 kilometres (50 mi).[5] Because of its vast dimensions, it is sometimes called The River Sea. The first bridge in the Amazon river system (over the Rio Negro) opened on 10 October 2010. It is in the immediate vicinity of the city of Manaus. -cr-  -cr- Main article: Amazon Basin -cr-  -cr- The Amazon Basin, the largest in the world, covers about 30% of South America, an area of approximately 7,050,000 square kilometres (2,720,000 sq mi). It drains from west to east, from Iquitos in Peru to all the way across Brazil to the Atlantic. It gathers its waters from 5 degrees north latitude to 20 degrees south latitude. Its most remote sources are found on the inter-Andean plateau, just a short distance from the Pacific ...

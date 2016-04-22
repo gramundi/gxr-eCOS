@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<answrs>
+	<datasource>
+		<incoming-timestamp>2012-12-05T12:46:48.603Z</incoming-timestamp>
+		<processed-timestamp>2012-12-05T12:46:48.603Z</processed-timestamp>
+		<remote-addr>127.0.0.1</remote-addr>
+		<target-schema>myedc1889</target-schema>
+		<schema-version>myEDC</schema-version>
+	</datasource>
+	<country>
+		<iso>ZZ</iso>
+		<parent>
+			<id>15489</id>
+			<domain>site</domain>
+			<parentDb>
+				<form>
+					<id>data_sitelist</id>
+					<iterator>
+						<id>15489</id>
+						<update>
+							<id>sitenum</id>
+							<value>777888</value>
+						</update>
+						<update>
+							<id>siteid</id>
+							<value>15489</value>
+						</update>
+						<update>
+							<id>sitename</id>
+							<value>Test Updated 777888</value>
+						</update>
+						<update>
+							<id>type</id>
+							<value>Site</value>
+						</update>
+						<update>
+							<id>contact</id>
+							<value>Answrs 777 Team</value>
+						</update>
+						<update>
+							<id>email</id>
+							<value>anisa.fazal@wwctrials.co.uk</value>
+						</update>
+						<update>
+							<id>altemail</id>
+							<value />
+						</update>
+						<update>
+							<id>phone</id>
+							<value>0115 956 7777</value>
+						</update>
+						<update>
+							<id>fax</id>
+							<value />
+						</update>
+						<update>
+							<id>active</id>
+							<value>t</value>
+						</update>
+						<update>
+							<id>address</id>
+							<value>Issac Newton Centre, Nottingham Science Park, University
+								Boulevard, Nottingham, NG7 5TG, United Kingdom</value>
+						</update>
+						<update>
+							<id>addressship</id>
+							<value>Issac Newton Centre, Nottingham Science Park, University
+								Boulevard, Nottingham, NG7 5TG, United Kingdom</value>
+						</update>
+						<update>
+							<id>country</id>
+							<value>United Kingdom</value>
+						</update>
+						<update>
+							<id>pi</id>
+							<value>Test Updated 2 - Investigator - test 3</value>
+						</update>
+						<update>
+							<id>capall</id>
+							<value />
+						</update>
+						<update>
+							<id>caprand</id>
+							<value />
+						</update>
+						<update>
+							<id>revisions</id>
+							<value>
+							</value>
+						</update>
+					</iterator>
+				</form>
+			</parentDb>
+		</parent>
+	</country>
+</answrs>

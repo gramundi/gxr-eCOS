@@ -1,0 +1,329 @@
+<reply status="ok" type="data_userlist">
+	<users>
+		<user>
+			<internalid>9248</internalid>
+			<sitenum>990</sitenum>
+			<sitename>ABC Pharma</sitename>
+			<siteid>7271</siteid>
+			<first>Richard</first>
+			<middle>O</middle>
+			<last>Seaman</last>
+			<login>richard</login>
+			<email>richard.seaman@wwctrials.com</email>
+			<phone>+44 (0)115 956 7711 </phone>
+			<fax></fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>11009</lastmbyid>
+			<lastmby>ANSWRS, WCT</lastmby>
+			<lastmdt>2012-08-01 11:28:48</lastmdt>
+			<numstudylogins>39</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>General User</generalrole>
+		</user>
+		<user>
+			<internalid>9408</internalid>
+			<sitenum>202</sitenum>
+			<sitename>Brussels Clinic</sitename>
+			<siteid>7270</siteid>
+			<first>Sunita</first>
+			<middle></middle>
+			<last>Sayeram</last>
+			<login>ssayeram</login>
+			<email>emily.malok@merge.com</email>
+			<phone>214-597-4649</phone>
+			<fax></fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>9408</lastmbyid>
+			<lastmby>Sayeram, Sunita</lastmby>
+			<lastmdt>2012-07-18 15:30:46</lastmdt>
+			<numstudylogins>1</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Study Designer</generalrole>
+		</user>
+		<user>
+			<internalid>11009</internalid>
+			<sitenum>201</sitenum>
+			<sitename>London General</sitename>
+			<siteid>7290</siteid>
+			<first>WCT</first>
+			<middle></middle>
+			<last>ANSWRS</last>
+			<login>wctanswrs</login>
+			<email>answrs_support@wwctrials.com</email>
+			<phone>+44 (0)115 956 7711 </phone>
+			<fax></fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist>,101,102,202,990,991,995,996,</othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>11009</lastmbyid>
+			<lastmby>ANSWRS, WCT</lastmby>
+			<lastmdt>2012-07-25 14:57:23</lastmdt>
+			<numstudylogins>136</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Study Designer</generalrole>
+		</user>
+		<user>
+			<internalid>24909</internalid>
+			<sitenum>101</sitenum>
+			<sitename>Raleigh Medical</sitename>
+			<siteid>7269</siteid>
+			<first>Shakeel</first>
+			<middle></middle>
+			<last>Ahmed</last>
+			<login>sahmed</login>
+			<email>shakeel.ahmed@wwctrials.com</email>
+			<phone>0115 956 7711</phone>
+			<fax></fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist>,102,</othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>11009</lastmbyid>
+			<lastmby>ANSWRS, WCT</lastmby>
+			<lastmdt>2012-11-20 14:12:31</lastmdt>
+			<numstudylogins>8</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Project Manager</generalrole>
+		</user>
+		<user>
+			<internalid>9128</internalid>
+			<sitenum>101</sitenum>
+			<sitename>Raleigh Medical</sitename>
+			<siteid>7269</siteid>
+			<first>Justin</first>
+			<middle>L</middle>
+			<last>Sheppard</last>
+			<login>jsheppard</login>
+			<email>justin.sheppard@merge.com</email>
+			<phone>919-653-3480</phone>
+			<fax></fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>9128</lastmbyid>
+			<lastmby>Sheppard, Justin</lastmby>
+			<lastmdt>2012-07-10 18:35:33</lastmdt>
+			<numstudylogins>16</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Study Designer</generalrole>
+		</user>
+		<user>
+			<internalid>11094</internalid>
+			<sitenum>101</sitenum>
+			<sitename>Raleigh Medical</sitename>
+			<siteid>7269</siteid>
+			<first>Justin</first>
+			<middle></middle>
+			<last>Sheppard</last>
+			<login>site-sheppard</login>
+			<email>justin.sheppard@merge.com</email>
+			<phone>9195555555</phone>
+			<fax></fax>
+			<desroleid>10</desroleid>
+			<desrolename>Study Coordinator</desrolename>
+			<allsites>f</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>9128</lastmbyid>
+			<lastmby>Sheppard, Justin</lastmby>
+			<lastmdt>2012-07-18 13:58:38</lastmdt>
+			<numstudylogins>5</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Study Designer</generalrole>
+		</user>
+		<user>
+			<internalid>12451</internalid>
+			<sitenum>101</sitenum>
+			<sitename>Raleigh Medical</sitename>
+			<siteid>7269</siteid>
+			<first>Patient</first>
+			<middle></middle>
+			<last>1889-26894 : 001007</last>
+			<login>1889-26894</login>
+			<email>john.race@wwctrials.com</email>
+			<phone>123123123123123123</phone>
+			<fax></fax>
+			<desroleid></desroleid>
+			<desrolename></desrolename>
+			<allsites>f</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>9348</lastmbyid>
+			<lastmby>Race, John</lastmby>
+			<lastmdt>2012-08-02 13:50:27</lastmdt>
+			<numstudylogins>0</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Subject</generalrole>
+		</user>
+		<user>
+			<internalid>25913</internalid>
+			<sitenum>101</sitenum>
+			<sitename>Raleigh Medical</sitename>
+			<siteid>7269</siteid>
+			<first>Patient</first>
+			<middle></middle>
+			<last>1889-58968 : 101202</last>
+			<login>1889-58968</login>
+			<email>shakeel.ahmed@wwctrials.com</email>
+			<phone>01111111111</phone>
+			<fax></fax>
+			<desroleid></desroleid>
+			<desrolename></desrolename>
+			<allsites>f</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>11009</lastmbyid>
+			<lastmby>ANSWRS, WCT</lastmby>
+			<lastmdt>2012-11-22 15:48:06</lastmdt>
+			<numstudylogins>1</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Subject</generalrole>
+		</user>
+		<user>
+			<internalid>13049</internalid>
+			<sitenum>101</sitenum>
+			<sitename>Raleigh Medical</sitename>
+			<siteid>7269</siteid>
+			<first>Patient</first>
+			<middle></middle>
+			<last>1889-26096 : 101</last>
+			<login>1889-26096</login>
+			<email>john.race@wwctrials.com</email>
+			<phone>0115 12345678</phone>
+			<fax></fax>
+			<desroleid></desroleid>
+			<desrolename></desrolename>
+			<allsites>f</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>9348</lastmbyid>
+			<lastmby>Race, John</lastmby>
+			<lastmdt>2012-08-08 12:56:01</lastmdt>
+			<numstudylogins>0</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Subject</generalrole>
+		</user>
+		<user>
+			<internalid>7218</internalid>
+			<sitenum>991</sitenum>
+			<sitename>Track The Trials</sitename>
+			<siteid>7272</siteid>
+			<first>Jonathan</first>
+			<middle></middle>
+			<last>Hughes</last>
+			<login>jhughes</login>
+			<email>jonathan.hughes@wwctrials.com</email>
+			<phone>0115 956 7711 </phone>
+			<fax>0115 922 0960  </fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>3407</lastmbyid>
+			<lastmby>Laney, Mark</lastmby>
+			<lastmdt>2012-05-16 07:34:55</lastmdt>
+			<numstudylogins>11</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Study Designer</generalrole>
+		</user>
+		<user>
+			<internalid>7028</internalid>
+			<sitenum>991</sitenum>
+			<sitename>Track The Trials</sitename>
+			<siteid>7272</siteid>
+			<first>Valerie</first>
+			<middle>A</middle>
+			<last>Aldcroft</last>
+			<login>valerie1101</login>
+			<email>val.aldcroft@wwctrials.com</email>
+			<phone>+44 (0)115 951 7183</phone>
+			<fax>+44 (0)115 922 0960</fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>1</lastmbyid>
+			<lastmby>Emerton, Eric</lastmby>
+			<lastmdt>2012-03-07 13:21:15</lastmdt>
+			<numstudylogins>0</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Study Designer</generalrole>
+		</user>
+		<user>
+			<internalid>3407</internalid>
+			<sitenum>991</sitenum>
+			<sitename>Track The Trials</sitename>
+			<siteid>7272</siteid>
+			<first>Mark</first>
+			<middle></middle>
+			<last>Laney</last>
+			<login>laneym</login>
+			<email>mark.laney@merge.com</email>
+			<phone>919.653.3427</phone>
+			<fax>919.653.3620</fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>3407</lastmbyid>
+			<lastmby>Laney, Mark</lastmby>
+			<lastmdt>2012-05-16 07:34:42</lastmdt>
+			<numstudylogins>11</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Study Designer</generalrole>
+		</user>
+		<user>
+			<internalid>1</internalid>
+			<sitenum>991</sitenum>
+			<sitename>Track The Trials</sitename>
+			<siteid>7272</siteid>
+			<first>Eric</first>
+			<middle></middle>
+			<last>Emerton</last>
+			<login>emertone</login>
+			<email>eric.emerton@merge.com</email>
+			<phone>x465</phone>
+			<fax>653-3620</fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrolename>
+			<allsites>t</allsites>
+			<othersitelist></othersitelist>
+			<studystatus>Active</studystatus>
+			<lastmbyid>1</lastmbyid>
+			<lastmby>Emerton, Eric</lastmby>
+			<lastmdt>2012-03-07 13:21:35</lastmdt>
+			<numstudylogins>0</numstudylogins>
+			<generalactive>t</generalactive>
+			<generalrole>Study Designer</generalrole>
+		</user>
+		<user>
+			<internalid>9348</internalid>
+			<sitenum>991</sitenum>
+			<sitename>Track The Trials</sitename>
+			<siteid>7272</siteid>
+			<first>John</first>
+			<middle></middle>
+			<last>Race</last>
+			<login>johnrace</login>
+			<email>john.race@wwctrials.com</email>
+			<phone>+44 (0)115 956 7711 </phone>
+			<fax></fax>
+			<desroleid>30</desroleid>
+			<desrolename>Administrator</desrole...
+			<desrolename>Administrator</desrole...
